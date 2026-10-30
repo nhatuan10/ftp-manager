@@ -1,8 +1,6 @@
 services:
   - type: web
     name: ftp-manager-app
-    runtime: java
+    env: docker
     region: singapore
     plan: free
-    buildCommand: "./mvnw clean package"
-    startCommand: "java -jar target/*.jar"
